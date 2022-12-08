@@ -1,0 +1,29 @@
+.home {
+  //   border: 1px solid red;
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($primary-color, 0.3)
+    ),
+    url(img/model-1.jpg) center top; //centering picture position and to the top
+  background-size: cover; //covers the image in the box while preserving it's ratio
+
+  &__name {
+    // border: 1px solid yellow;
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid set-text-color($primary-color);
+
+    &--last {
+      //   border: 1px solid green;
+      color: $secondary-color;
+      font-weight: 700;
+    }
+  }
+}
